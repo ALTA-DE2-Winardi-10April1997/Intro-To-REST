@@ -1,0 +1,898 @@
+{
+	"info": {
+		"_postman_id": "c1beea1b-16b7-4d16-9fc1-c5dff4cbf635",
+		"name": "newsapi.org",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33250684"
+	},
+	"item": [
+		{
+			"name": "Get all source",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://newsapi.org/v2/top-headlines/sources?apiKey=063780b9788143879dea237bf9418e3f",
+					"protocol": "https",
+					"host": [
+						"newsapi",
+						"org"
+					],
+					"path": [
+						"v2",
+						"top-headlines",
+						"sources"
+					],
+					"query": [
+						{
+							"key": "apiKey",
+							"value": "063780b9788143879dea237bf9418e3f"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post newsapi",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "in",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "value",
+							"value": "063780b9788143879dea237bf9418e3f",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "apiKey",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n     \"id\": \"nardi-news\",\r\n    \"name\": \"nardi News\",\r\n    \"description\": \"Your trusted source for breaking news, analysis, exclusive interviews, headlines, and videos at WinsNews.com.\",\r\n    \"url\": \"https://winsnews.id\",\r\n    \"category\": \"general\",\r\n    \"language\": \"en\",\r\n    \"country\": \"us\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://newsapi.org/v2/top-headlines/sources?apiKey=063780b9788143879dea237bf9418e3f",
+					"protocol": "https",
+					"host": [
+						"newsapi",
+						"org"
+					],
+					"path": [
+						"v2",
+						"top-headlines",
+						"sources"
+					],
+					"query": [
+						{
+							"key": "apiKey",
+							"value": "063780b9788143879dea237bf9418e3f"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Put newsapi",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n            \"id\": \"abc-news-update\",\r\n            \"name\": \"ABC News Update\",\r\n            \"description\": \"Your trusted source for breaking news, analysis, exclusive interviews, headlines, and videos at ABCNews.com.\",\r\n            \"url\": \"https://abcnews.go.com\",\r\n            \"category\": \"general\",\r\n            \"language\": \"en\",\r\n            \"country\": \"us\"\r\n        },",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://newsapi.org/v2/top-headlines/sources?apiKey=063780b9788143879dea237bf9418e3f",
+					"protocol": "https",
+					"host": [
+						"newsapi",
+						"org"
+					],
+					"path": [
+						"v2",
+						"top-headlines",
+						"sources"
+					],
+					"query": [
+						{
+							"key": "apiKey",
+							"value": "063780b9788143879dea237bf9418e3f"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete all Source",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://newsapi.org/v2/top-headlines/sources?apiKey=063780b9788143879dea237bf9418e3f",
+					"protocol": "https",
+					"host": [
+						"newsapi",
+						"org"
+					],
+					"path": [
+						"v2",
+						"top-headlines",
+						"sources"
+					],
+					"query": [
+						{
+							"key": "apiKey",
+							"value": "063780b9788143879dea237bf9418e3f"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Patch al source",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "in",
+							"value": "query",
+							"type": "string"
+						},
+						{
+							"key": "value",
+							"value": "063780b9788143879dea237bf9418e3f",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "apiKey",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n            \"id\": \"abc-news-update\",\r\n            \"name\": \"ABC News Update\",\r\n            \"description\": \"Your trusted source for breaking news, analysis, exclusive interviews, headlines, and videos at ABCNews.com.\",\r\n            \"url\": \"https://abcnews.go.com\",\r\n            \"category\": \"general\",\r\n            \"language\": \"en\",\r\n            \"country\": \"us\"\r\n        },",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://newsapi.org/v2/top-headlines/sources?apiKey=063780b9788143879dea237bf9418e3f",
+					"protocol": "https",
+					"host": [
+						"newsapi",
+						"org"
+					],
+					"path": [
+						"v2",
+						"top-headlines",
+						"sources"
+					],
+					"query": [
+						{
+							"key": "apiKey",
+							"value": "063780b9788143879dea237bf9418e3f"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Top business",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=063780b9788143879dea237bf9418e3f",
+					"protocol": "https",
+					"host": [
+						"newsapi",
+						"org"
+					],
+					"path": [
+						"v2",
+						"top-headlines"
+					],
+					"query": [
+						{
+							"key": "country",
+							"value": "us"
+						},
+						{
+							"key": "category",
+							"value": "business"
+						},
+						{
+							"key": "apiKey",
+							"value": "063780b9788143879dea237bf9418e3f"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post Top business",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "in",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "value",
+							"value": "063780b9788143879dea237bf9418e3f",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "apiKey",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n            \"source\": {\r\n                \"id\": null,\r\n                \"name\": \"wins Entertainment\"\r\n            },\r\n            \"author\": null,\r\n            \"title\": \"MicroStrategy (MSTR) Now At $4.9 Billion In Unrealized Bitcoin Profit - Yahoo Finance\",\r\n            \"description\": null,\r\n            \"url\": \"https://finance.yahoo.com/news/microstrategy-mstr-now-4-9-223922737.html\",\r\n            \"urlToImage\": null,\r\n            \"publishedAt\": \"2024-02-27T22:39:22Z\",\r\n            \"content\": \"Si vous cliquez sur « Tout accepter », nos partenaires (y compris 241 qui font partie du Cadre de transparence et de consentement dIAB) et nous utiliserons également des témoins et vos données person… [+982 chars]\"\r\n        },",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=063780b9788143879dea237bf9418e3f",
+					"protocol": "https",
+					"host": [
+						"newsapi",
+						"org"
+					],
+					"path": [
+						"v2",
+						"top-headlines"
+					],
+					"query": [
+						{
+							"key": "country",
+							"value": "us"
+						},
+						{
+							"key": "category",
+							"value": "business"
+						},
+						{
+							"key": "apiKey",
+							"value": "063780b9788143879dea237bf9418e3f"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Put Top business",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "in",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "value",
+							"value": "063780b9788143879dea237bf9418e3f",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "apiKey",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "     {\r\n            \"source\": {\r\n                \"id\": null,\r\n                \"name\": \"wins Update\"\r\n            },\r\n            \"author\": \"winardi\",\r\n            \"title\": \"EBay stock is on the upswing after strong results and guidance, raised dividend - MarketWatch\",\r\n            \"description\": \"EBay Inc.’s stock rose 3% in extended trading Tuesday after the online marketplace delivered quarterly results that topped analysts’ estimates and issued...\",\r\n            \"url\": \"https://www.marketwatch.com/story/ebays-stock-is-on-the-upswing-after-strong-results-and-guidance-dividend-hike-12eb67d7\",\r\n            \"urlToImage\": \"https://images.mktw.net/im-50111151/social\",\r\n            \"publishedAt\": \"2024-02-27T21:21:00Z\",\r\n            \"content\": \"EBay Inc.s stock rose 3% in extended trading Tuesday after the online marketplace delivered quarterly results that topped analysts estimates and issued stout guidance, assuaging for now concerns over… [+1460 chars]\"\r\n        }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=063780b9788143879dea237bf9418e3f",
+					"protocol": "https",
+					"host": [
+						"newsapi",
+						"org"
+					],
+					"path": [
+						"v2",
+						"top-headlines"
+					],
+					"query": [
+						{
+							"key": "country",
+							"value": "us"
+						},
+						{
+							"key": "category",
+							"value": "business"
+						},
+						{
+							"key": "apiKey",
+							"value": "063780b9788143879dea237bf9418e3f"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Top Business",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=063780b9788143879dea237bf9418e3f&id=business-insider",
+					"protocol": "https",
+					"host": [
+						"newsapi",
+						"org"
+					],
+					"path": [
+						"v2",
+						"top-headlines"
+					],
+					"query": [
+						{
+							"key": "country",
+							"value": "us"
+						},
+						{
+							"key": "category",
+							"value": "business"
+						},
+						{
+							"key": "apiKey",
+							"value": "063780b9788143879dea237bf9418e3f"
+						},
+						{
+							"key": "id",
+							"value": "business-insider"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get About Tesla",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "POst About Tesla",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n            \"source\": {\r\n                \"id\": \"wins-tesla\" ,\r\n                \"name\": \"Focus\"\r\n            },\r\n            \"author\": \"Winardi\",\r\n            \"title\": \"Protest - Umweltbündnis: Politik soll Tesla-Erweiterung verhindern\",\r\n            \"description\": \"Umweltaktivisten richten sich auf eine längere Zeit in ihrem Protestcamp neben der Tesla-Fabrik in Grünheide ein. Das Bündnis «Tesla den Hahn abdrehen» hat eine klare Haltung zu den Tesla-Plänen.\",\r\n            \"url\": \"https://www.focus.de/finanzen/news/protest-umweltbuendnis-politik-soll-tesla-erweiterung-verhindern_id_259722865.html\",\r\n            \"urlToImage\": \"https://p6.focus.de/img/finanzen/news/id_259722864/in-gruenheide-steht-die-einzige-europaeische-fabrik-des-unternehmens-von-milliardaer-elon-musk..jpg?im=Crop%3D%280%2C173%2C2048%2C1024%29%3BResize%3D%281200%2C627%29&impolicy=perceptual&quality=mediumHigh&hash=b8699e75fb83ebc0c38528709e3e7c9b6ae4ec20cd7181d0c28af82a5ce7cb31\",\r\n            \"publishedAt\": \"2024-03-02T14:40:04Z\",\r\n            \"content\": \"Umweltschützer haben die Politik in Brandenburg aufgefordert, die Erweiterungspläne des US-Autobauers Tesla in Grünheide bei Berlin und eine erneute Rodung von Wald zu verhindern.\\r\\n«Was muss noch pas… [+1321 chars]\"\r\n        }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://newsapi.org/v2/everything?q=tesla&sortBy=publishedAt&apiKey=063780b9788143879dea237bf9418e3f",
+					"protocol": "https",
+					"host": [
+						"newsapi",
+						"org"
+					],
+					"path": [
+						"v2",
+						"everything"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "tesla"
+						},
+						{
+							"key": "from",
+							"value": "2024-02-03",
+							"disabled": true
+						},
+						{
+							"key": "sortBy",
+							"value": "publishedAt"
+						},
+						{
+							"key": "apiKey",
+							"value": "063780b9788143879dea237bf9418e3f"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Put About Tesla",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "in",
+							"value": "query",
+							"type": "string"
+						},
+						{
+							"key": "value",
+							"value": "063780b9788143879dea237bf9418e3f",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "apiKey",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n            \"source\": {\r\n                \"id\": \"focus\",\r\n                \"name\": \"Focus\"\r\n            },\r\n            \"author\": \"DPA UPDATE\",\r\n            \"title\": \"Protest - Umweltbündnis: Politik soll Tesla-Erweiterung verhindern\",\r\n            \"description\": \"Umweltaktivisten richten sich auf eine längere Zeit in ihrem Protestcamp neben der Tesla-Fabrik in Grünheide ein. Das Bündnis «Tesla den Hahn abdrehen» hat eine klare Haltung zu den Tesla-Plänen.\",\r\n            \"url\": \"https://www.focus.de/finanzen/news/protest-umweltbuendnis-politik-soll-tesla-erweiterung-verhindern_id_259722865.html\",\r\n            \"urlToImage\": \"https://p6.focus.de/img/finanzen/news/id_259722864/in-gruenheide-steht-die-einzige-europaeische-fabrik-des-unternehmens-von-milliardaer-elon-musk..jpg?im=Crop%3D%280%2C173%2C2048%2C1024%29%3BResize%3D%281200%2C627%29&impolicy=perceptual&quality=mediumHigh&hash=b8699e75fb83ebc0c38528709e3e7c9b6ae4ec20cd7181d0c28af82a5ce7cb31\",\r\n            \"publishedAt\": \"2024-03-02T14:40:04Z\",\r\n            \"content\": \"Umweltschützer haben die Politik in Brandenburg aufgefordert, die Erweiterungspläne des US-Autobauers Tesla in Grünheide bei Berlin und eine erneute Rodung von Wald zu verhindern.\\r\\n«Was muss noch pas… [+1321 chars]\"\r\n        }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://newsapi.org/v2/everything?q=tesla&sortBy=publishedAt&apiKey=063780b9788143879dea237bf9418e3f",
+					"protocol": "https",
+					"host": [
+						"newsapi",
+						"org"
+					],
+					"path": [
+						"v2",
+						"everything"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "tesla"
+						},
+						{
+							"key": "sortBy",
+							"value": "publishedAt"
+						},
+						{
+							"key": "apiKey",
+							"value": "063780b9788143879dea237bf9418e3f"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://newsapi.org/v2/everything?q=tesla&sortBy=publishedAt&apiKey=063780b9788143879dea237bf9418e3f",
+					"protocol": "https",
+					"host": [
+						"newsapi",
+						"org"
+					],
+					"path": [
+						"v2",
+						"everything"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "tesla"
+						},
+						{
+							"key": "sortBy",
+							"value": "publishedAt"
+						},
+						{
+							"key": "apiKey",
+							"value": "063780b9788143879dea237bf9418e3f"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Mention Apple",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://newsapi.org/v2/everything?q=apple&from=2024-02-29&to=2024-02-29&sortBy=popularity&apiKey=063780b9788143879dea237bf9418e3f",
+					"protocol": "https",
+					"host": [
+						"newsapi",
+						"org"
+					],
+					"path": [
+						"v2",
+						"everything"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "apple"
+						},
+						{
+							"key": "from",
+							"value": "2024-02-29"
+						},
+						{
+							"key": "to",
+							"value": "2024-02-29"
+						},
+						{
+							"key": "sortBy",
+							"value": "popularity"
+						},
+						{
+							"key": "apiKey",
+							"value": "063780b9788143879dea237bf9418e3f"
+						},
+						{
+							"key": "id",
+							"value": "engadget",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Psot mention Aple",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n            \"source\": {\r\n                \"id\": \"engadget-Post\",\r\n                \"name\": \"Engadget Post\"\r\n            },\r\n            \"author\": \"Jeff Dunn Post\",\r\n            \"title\": \"The Apple AirPods Pro are back on sale for $190\",\r\n            \"description\": \"If you've been looking to pick up a set of Apple's AirPods Pros, today might be a good day to pounce. The latest version of the noise-canceling wireless earphones, which arrived last September and includes a USB-C charging case, is back down to $190 at Amazon…\",\r\n            \"url\": \"https://www.engadget.com/the-apple-airpods-pro-are-back-on-sale-for-190-152417164.html\",\r\n            \"urlToImage\": \"https://s.yimg.com/ny/api/res/1.2/KW_ttqCE77KThzID6TsgWg--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyMDA7aD04MDA-/https://s.yimg.com/os/creatr-uploaded-images/2022-09/9c0c14e0-39fd-11ed-bff7-79b7ce0a4b0e\",\r\n            \"publishedAt\": \"2024-02-29T15:24:18Z\",\r\n            \"content\": \"If you've been looking to pick up a set of Apple's AirPods Pros, today might be a good day to pounce. The latest version of the noise-canceling wireless earphones, which arrived last September and in… [+2127 chars]\"\r\n        }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://newsapi.org/v2/everything?q=apple&from=2024-02-29&to=2024-02-29&sortBy=popularity&apiKey=063780b9788143879dea237bf9418e3f",
+					"protocol": "https",
+					"host": [
+						"newsapi",
+						"org"
+					],
+					"path": [
+						"v2",
+						"everything"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "apple"
+						},
+						{
+							"key": "from",
+							"value": "2024-02-29"
+						},
+						{
+							"key": "to",
+							"value": "2024-02-29"
+						},
+						{
+							"key": "sortBy",
+							"value": "popularity"
+						},
+						{
+							"key": "apiKey",
+							"value": "063780b9788143879dea237bf9418e3f"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Put Mention Apple",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n            \"source\": {\r\n                \"name\": \"Engadget-Update\"\r\n            },\r\n            \"author\": \"Jeff Dunn\",\r\n            \"title\": \"The Apple AirPods Pro are back on sale for $190\",\r\n            \"description\": \"If you've been looking to pick up a set of Apple's AirPods Pros, today might be a good day to pounce. The latest version of the noise-canceling wireless earphones, which arrived last September and includes a USB-C charging case, is back down to $190 at Amazon…\",\r\n            \"url\": \"https://www.engadget.com/the-apple-airpods-pro-are-back-on-sale-for-190-152417164.html\",\r\n            \"urlToImage\": \"https://s.yimg.com/ny/api/res/1.2/KW_ttqCE77KThzID6TsgWg--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyMDA7aD04MDA-/https://s.yimg.com/os/creatr-uploaded-images/2022-09/9c0c14e0-39fd-11ed-bff7-79b7ce0a4b0e\",\r\n            \"publishedAt\": \"2024-02-29T15:24:18Z\",\r\n            \"content\": \"If you've been looking to pick up a set of Apple's AirPods Pros, today might be a good day to pounce. The latest version of the noise-canceling wireless earphones, which arrived last September and in… [+2127 chars]\"\r\n        }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://newsapi.org/v2/everything?q=apple&from=2024-02-29&to=2024-02-29&sortBy=popularity&apiKey=063780b9788143879dea237bf9418e3f&id=Engadget",
+					"protocol": "https",
+					"host": [
+						"newsapi",
+						"org"
+					],
+					"path": [
+						"v2",
+						"everything"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "apple"
+						},
+						{
+							"key": "from",
+							"value": "2024-02-29"
+						},
+						{
+							"key": "to",
+							"value": "2024-02-29"
+						},
+						{
+							"key": "sortBy",
+							"value": "popularity"
+						},
+						{
+							"key": "apiKey",
+							"value": "063780b9788143879dea237bf9418e3f"
+						},
+						{
+							"key": "id",
+							"value": "Engadget"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Mention Apple",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://newsapi.org/v2/everything?q=apple&from=2024-02-29&to=2024-02-29&sortBy=popularity&apiKey=063780b9788143879dea237bf9418e3f&id=Engadget",
+					"protocol": "https",
+					"host": [
+						"newsapi",
+						"org"
+					],
+					"path": [
+						"v2",
+						"everything"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "apple"
+						},
+						{
+							"key": "from",
+							"value": "2024-02-29"
+						},
+						{
+							"key": "to",
+							"value": "2024-02-29"
+						},
+						{
+							"key": "sortBy",
+							"value": "popularity"
+						},
+						{
+							"key": "apiKey",
+							"value": "063780b9788143879dea237bf9418e3f"
+						},
+						{
+							"key": "id",
+							"value": "Engadget"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get techcrunch",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "in",
+							"value": "query",
+							"type": "string"
+						},
+						{
+							"key": "value",
+							"value": "063780b9788143879dea237bf9418e3f",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "apiKey",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n            \"source\": {\r\n                \"id\": \"techcrunch\",\r\n                \"name\": \"TechCrunch\"\r\n            },\r\n            \"author\": \"Kirsten Korosec UPDATE\",\r\n            \"title\": \"Waymo can now charge for robotaxi rides in LA and on San Francisco freeways | TechCrunch\",\r\n            \"description\": \"Waymo received final approval from California regulators that will allow the Alphabet company to charge for robotaxi rides in LA.\",\r\n            \"url\": \"https://techcrunch.com/2024/03/01/waymo-can-now-charge-for-robotaxi-rides-in-la-and-on-san-francisco-freeways/\",\r\n            \"urlToImage\": \"https://techcrunch.com/wp-content/uploads/2023/10/GettyImages-1247366540.jpg?resize=1200,738\",\r\n            \"publishedAt\": \"2024-03-01T23:20:40Z\",\r\n            \"content\": \"Waymo received approval Friday afternoon from the California Public Utilities Commission to operate a commercial robotaxi service in Los Angeles, the San Francisco Peninsula and on San Francisco free… [+2486 chars]\"\r\n        }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=063780b9788143879dea237bf9418e3f",
+					"protocol": "https",
+					"host": [
+						"newsapi",
+						"org"
+					],
+					"path": [
+						"v2",
+						"top-headlines"
+					],
+					"query": [
+						{
+							"key": "sources",
+							"value": "techcrunch"
+						},
+						{
+							"key": "apiKey",
+							"value": "063780b9788143879dea237bf9418e3f"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Put techcrunch",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n            \"source\": {\r\n                \"id\": \"techcrunch\",\r\n                \"name\": \"TechCrunch\"\r\n            },\r\n            \"author\": \"Kirsten Korosec UPDATE\",\r\n            \"title\": \"Waymo can now charge for robotaxi rides in LA and on San Francisco freeways | TechCrunch\",\r\n            \"description\": \"Waymo received final approval from California regulators that will allow the Alphabet company to charge for robotaxi rides in LA.\",\r\n            \"url\": \"https://techcrunch.com/2024/03/01/waymo-can-now-charge-for-robotaxi-rides-in-la-and-on-san-francisco-freeways/\",\r\n            \"urlToImage\": \"https://techcrunch.com/wp-content/uploads/2023/10/GettyImages-1247366540.jpg?resize=1200,738\",\r\n            \"publishedAt\": \"2024-03-01T23:20:40Z\",\r\n            \"content\": \"Waymo received approval Friday afternoon from the California Public Utilities Commission to operate a commercial robotaxi service in Los Angeles, the San Francisco Peninsula and on San Francisco free… [+2486 chars]\"\r\n        }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=063780b9788143879dea237bf9418e3f",
+					"protocol": "https",
+					"host": [
+						"newsapi",
+						"org"
+					],
+					"path": [
+						"v2",
+						"top-headlines"
+					],
+					"query": [
+						{
+							"key": "sources",
+							"value": "techcrunch"
+						},
+						{
+							"key": "apiKey",
+							"value": "063780b9788143879dea237bf9418e3f"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete techcrunch",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=063780b9788143879dea237bf9418e3f",
+					"protocol": "https",
+					"host": [
+						"newsapi",
+						"org"
+					],
+					"path": [
+						"v2",
+						"top-headlines"
+					],
+					"query": [
+						{
+							"key": "sources",
+							"value": "techcrunch"
+						},
+						{
+							"key": "apiKey",
+							"value": "063780b9788143879dea237bf9418e3f"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
